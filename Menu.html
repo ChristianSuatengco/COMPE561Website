@@ -1,0 +1,157 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        body {
+          margin: 0;
+          font-family: Montserrat;
+        }
+        
+            
+        .topnav {
+              overflow: auto;
+              background-color: rgb(31, 10, 10);
+              width: 100%;
+            }
+        .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+                width: 16.666%;
+                
+            }
+        
+        
+        .topnav a:hover {
+          background-color: rgb(31, 10, 10);
+          color: rgb(255, 119, 119);
+        }
+        
+        .topnav a.active {
+          background-color: rgb(31, 10, 10);
+          color: white;
+        }
+        
+		label {
+    	display: inline-block;
+    	width:150px;
+    	text-align: left;
+        font-size: 20px;
+		}
+        
+        p {
+        font-size: 25px;
+        }
+	
+        </style>
+</head>
+<body>
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="Menu.html">Menu</a>
+  <a href="#deals">Deals</a>
+  <a href="contactus.html">Contact Us</a>
+  <a href="#orderonline">Order Online</a>
+</div>
+
+<p> Choose Your Delivery Type </p>
+<fieldset>  
+  <input type="radio" id="PickUp" name="DeliveryType">
+  <label for="small">Pick Up</label><br>
+  <input type="radio" id="CurbSide" name="DeliveryType">
+  <label for="medium">CurbSide</label><br>
+  <input type="radio" id="delivery" name="DeliveryType">
+  <label for="large">Delivery</label>
+</fieldset>
+
+<p> Choose Your Pizza Size </p>
+<fieldset>  
+  <input type="radio" id="small" name="PizzaSize" value="Small">
+  <label for="small">Small 10"</label><br>
+  <input type="radio" id="medium" name="PizzaSize" value="Medium">
+  <label for="medium">Medium 12"</label><br>
+  <input type="radio" id="large" name="PizzaSize" value="Large">
+  <label for="large">Large 14"</label>
+</fieldset>
+
+<p> Choose Your Crust</p>
+<fieldset>  
+  <input type="radio" id="ThinCrust" name="Crust" value="ThinCrust">
+  <label for="ThinCrust">Thin Crust</label><br>
+  <input type="radio" id="StuffedCrust" name="Crust" value="StuffedCrust">
+  <label for="StuffedCrust">Stuffed Crust</label><br>
+  <input type="radio" id="HandTossed" name="Crust" value="HandTossed">
+  <label for="HandTossed">Hand Tossed</label>
+</fieldset> 
+
+<p> Choose Your Sauce</p>
+<fieldset>  
+  <input type="radio" id="TomatoSauce" name="Sauce" value="TomatoSauce">
+  <label for="TomatoSauce">Tomato Sauce</label><br>
+  <input type="radio" id="AlfredoSauce" name="Sauce" value="AlfredoSauce">
+  <label for="AlfredoSauce">Alfredo Sauce</label><br>
+  <input type="radio" id="BBQSauce" name="Sauce" value="BBQSauce">
+  <label for="BBQSauce">BBQ Sauce</label>
+</fieldset>
+
+<p> Choose Your Toppings </p>
+<fieldset>  
+  <input type="checkbox" id="Pepperoni" name="Toppings" value="Pepperoni">
+  <label for="Pepperoni">Pepperoni</label><br>
+  <input type="checkbox" id="Ham" name="Toppings" value="Ham">
+  <label for="Ham">Ham</label><br>  
+  <input type="checkbox" id="Sausage" name="Toppings" value="Sausage">
+  <label for="Sausage">Sausage</label><br>
+  <input type="checkbox" id="Bacon" name="Toppings" value="Bacon">
+  <label for="Bacon">Bacon</label><br>
+  <input type="checkbox" id="Chicken" name="Toppings" value="Chicken">
+  <label for="Chicken">Chicken</label><br>  
+  <input type="checkbox" id="Mushroom" name="Toppings" value="Mushroom">
+  <label for="Mushroom">Mushroom</label><br>  
+  <input type="checkbox" id="Onions" name="Toppings" value="Onions">
+  <label for="Onions">Onions</label><br>  
+  <input type="checkbox" id="Pineapple" name="Toppings" value="Pineapple">
+  <label for="Pineapple">Pineapple</label><br> 
+  <input type="checkbox" id="Spinach" name="Toppings" value="Spinach">
+  <label for="Spinach">Spinach</label><br>  
+  <input type="checkbox" id="Olives" name="Toppings" value="Olives">
+  <label for="Olives">Olives</label><br>
+  <input type="checkbox" id="BananaPeppers" name="Toppings" value="BananaPeppers">
+  <label for="BananaPeppers">BananaPeppers</label><br>
+  <input type="checkbox" id="GreenPeppers" name="Toppings" value="GreenPeppers">
+  <label for="GreenPeppers">GreenPeppers</label><br>
+  <input type="checkbox" id="JalapenoPeppers" name="Toppings" value="JalapenoPeppers">
+  <label for="JalapenoPeppers">Jalapeno Peppers</label><br>
+  <label for="SpecialInstructions">Special Instructions</label><br>
+  <textarea style="height:100px;font-size:10pt;width:400px;" id="SpecialInstructions" name="SpecialInstructions">
+  </textarea><br><br><br><br>
+</fieldset> 
+
+
+<h1>Customer Information</h1>
+<fieldset>	
+  <label for="fname">First name:</label>
+  <input type="text" style=margin-right:50px; id="fname" name="fname"><br>
+  <label for="lname">Last name:</label>
+  <input type="text"  id="lname" name="lname"><br>
+  <label for="emailadd">Email Address:</label>
+  <input type="email" id="emailadd" name="emailadd"><br>
+  <label for="Pnum">Phone Number:</label>
+  <input type="tel" id="Pnum" name="Pnum"><br>
+  <label for="Streetadd">Street Address:</label>
+  <input type="text" id="Streetadd" name="Streetadd"><br>
+  <label for="SuiteApt">Suite/Apt#:</label>
+  <input type="text" id="SuiteApt" name="SuiteApt"><br>
+  <label for="ZipC">Zip Code:</label>
+  <input type="number" id="ZipC" name="ZipC"><br>
+  <label for="City">City:</label>
+  <input type="text" id="City" name="City"><br>
+</fieldset>
+
+
+</body>
+</html>
